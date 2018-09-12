@@ -1,0 +1,32 @@
+:root {
+--btn-letter-spacing: 1.5px;
+--btn-font-size: 13px;
+--btn-font-weight: 600;
+}
+
+
+
+
+button,
+.bttn,
+.bttn-tertiary {
+	font-family: var(--font-body);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

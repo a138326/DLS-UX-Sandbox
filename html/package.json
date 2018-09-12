@@ -1,0 +1,9 @@
+{
+  "name": "agl-dls-skectch",
+  "version": "0.0.1"
+  },
+  "scripts": {
+  "html-sketchapp-install": "html-sketchapp install",
+  "html-sketchapp": "html-sketchapp [...args]"
+  }
+}

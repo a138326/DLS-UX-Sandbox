@@ -1,0 +1,34 @@
+:root {
+
+/* Primary = btn-01 */
+--btn-01-col-01: #89FFE6;
+--btn-01-col-02: #00FEC9;
+--btn-01-col-03: #15DFC1;
+
+--btn-01-bg: var(--btn-01-col-02);
+--btn-01-bg-grad: 236deg, var(--btn-01-col-02) 0%, var(--btn-01-col-02); 100%;
+
+
+--btn-01-hover-bg: var(--btn-01-col-01);
+--btn-01-hover-bg-grad: 236deg, var(--btn-01-col-01) 0%, var(--btn-01-col-01) 100%;
+
+--btn-01-active-bg:var(--btn-01-col-03);
+--btn-01-active-bg-grad: 236deg, var(--btn-01-col-03) 0%, var(--btn-01-col-03) 100%;
+
+--btn-01-focus-bg: var(--btn-01-col-01);
+
+
+/* Secondary = btn-02 */
+--btn-02-hover-bg-grad: 236deg, var(--btn-02-col-02) 0%, var(--btn-02-col-02) 100%;
+--btn-02-active-bg-grad: 236deg, var(--btn-02-col-03) 0%, var(--btn-02-col-03) 100%;
+
+
+
+/* Tertiary text link = btn-txt */
+--btn-txt: 			var(--c01-dark);
+--btn-txt-hover: 	#007AFF;
+--btn-txt-active: 	#001CB0;
+--btn-txt-focus-: 	var(--c01-dark);
+
+}
+

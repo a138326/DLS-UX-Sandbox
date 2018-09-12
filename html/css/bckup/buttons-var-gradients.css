@@ -1,0 +1,124 @@
+
+/*
+–––––––––––––––––––––––––––––––––––––––
+Primary button style
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+button:hover, 		.bttn:hover,
+button.hover, 		.bttn.hover {
+	background-color: var(--btn-01-hover-bg);
+	box-shadow: var(--btn-shadow-01);
+}
+button:active, 		.bttn:active,
+button.active, 		.bttn.active {
+	background-color: var(--btn-01-active-bg);
+	border: none;
+	box-shadow: none;
+}
+
+
+
+/*
+–––––––––––––––––––––––––––––––––––––––
+Primary - gradient
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.bttn-primary {
+	background-color: var(--btn-02-bg);
+	background-image: -webkit-linear-gradient(221deg, #FFE344 0%,  #FFE344 100%);
+	background-image: linear-gradient(221deg, #FFE344 0%,  #FFE344 100%);
+	color: var(--btn-01-text);
+	position: relative;
+	z-index: 100;
+	box-shadow: none;
+}
+.bttn-primary:before {
+	border-radius: inherit;
+	background-image: -webkit-linear-gradient(221deg, #FFE344 0%,  #FBC333 100%);
+	background-image: linear-gradient(221deg, #FFE344 0%,  #FBC333 100%);
+	content: '';
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	z-index: -100;
+	transition: 			opacity 		0.25s ease-in-out,
+							box-shadow 		0.25s ease-in-out;
+	-moz-transition: 		opacity 		0.25s ease-in-out;
+	-webkit-transition: 	opacity 		0.25s ease-in-out;
+	box-shadow: var(--btn-shadow-01);
+}
+.bttn-primary:active {
+	background-color: var(--btn-01-active-bg);
+}
+.bttn-primary:hover:before {
+  opacity: 1;
+}
+.bttn-primary:active:before {
+  opacity: 0;
+}
+
+
+/*
+–––––––––––––––––––––––––––––––––––––––
+Secondary - gradient
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.bttn-secondary {
+	background-color: var(--btn-02-bg);
+	background-image: -webkit-linear-gradient(224deg, #001CB0 0%,  #001CB0 100%);
+	background-image: linear-gradient(224deg, #001CB0 0%,  #001CB0 100%);
+}
+.bttn-secondary:before {
+	background-image: -webkit-linear-gradient(224deg, #0071CB 0%,  #001CB0 100%);
+	background-image: linear-gradient(224deg, #0071CB 0%,  #001CB0 100%);
+}
+
+
+
+/*
+–––––––––––––––––––––––––––––––––––––––
+Reverse
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+
+.bttn-secondary-reverse {
+	background-color: rgba(255,255,255,0);
+	color: #fff;
+	border: 1px solid #fff;
+	line-height: 44px;
+}
+.bttn-secondary-reverse:hover,
+.bttn-secondary-reverse.hover,
+.bttn-secondary-reverse:active,
+.bttn-secondary-reverse.active {
+	background-color: rgba(255,255,255,1);
+	color: var(--c01-dark);
+	box-shadow: var(--btn-shadow-02);
+	border: 1px solid #fff;
+	line-height: 44px;
+}
+.bttn-secondary-reverse:active,
+.bttn-secondary-reverse.active {
+	background-color: rgba(255,255,255,1);
+	opacity: 0.8;
+	box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

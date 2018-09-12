@@ -1,0 +1,33 @@
+:root {
+--btn-letter-spacing: 0.75px;
+--btn-font-size: 16px;
+--btn-font-weight: 600;
+}
+
+
+
+
+button,
+.bttn,
+.bttn-tertiary {
+	text-transform: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,119 @@
+:root {
+  --input-padding-x: var(--sp-04);
+  --input-padding-y: var(--sp-04);
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: var(--sp-04);
+}
+
+.form-label-group > label {
+  padding: var(--input-padding-y) var(--input-padding-x);
+}
+
+.form-label-group > input {
+	padding: 0;
+}
+
+.form-label-group > label {
+  position: absolute;
+   top: 16px;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0; /* Override default `<label>` margin */
+  line-height: 1.5;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+  
+  padding: 0;
+ 
+  color: var(--c03-gray-03);
+}
+
+.form-label-group input::placeholder				{	color: transparent;		}
+.form-label-group input::-webkit-input-placeholder 	{	color: transparent;		}
+.form-label-group input:-ms-input-placeholder		{	color: transparent;		}
+.form-label-group input::-ms-input-placeholder		{	color: transparent;		}
+.form-label-group input::-moz-placeholder			{	color: transparent;		}
+
+
+.form-label-group input:not(:placeholder-shown) {
+  padding-top: 12px!important;
+  padding-bottom: 0;
+}
+
+.form-label-group input:not(:placeholder-shown) ~ label {
+  font-size: var(--body-size-smallest);
+  padding-top: 0;
+  padding-bottom: 0;
+  top: -7px;
+  color: var(--c03-gray-01);
+}
+
+.form-label-group input:focus:not(:placeholder-shown) ~ label {
+	color: var(--c01-dark);
+}
+
+.form-control {
+	display: block;
+    width: 100%;
+    line-height: 1.5;
+    font-size: var(--body-size-normal);
+    background-clip: padding-box;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-control, .custom-select {
+	height: 48px;
+	background-color: transparent;
+	border: none;
+	padding: 0!important;
+	border-radius: 0!important;
+	border-bottom: 1px solid var(--c03-gray-02);
+	color: var(--c03-gray-01)!important;
+}
+.form-control:focus {
+	background-color: transparent;
+	outline: 0;
+	border: none;
+	box-shadow: none;
+	border-bottom: 2px solid var(--c01-dark);
+}
+.form-label-group > input, .form-label-group > label {
+	padding-left: 0;
+}
+
+
+.invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: var(--sp-02);
+    font-size: var(--body-size-smallest);
+    color: var(--c02-warning-dark);
+}
+
+
+/* Fallback for Edge
+-------------------------------------------------- */
+@supports (-ms-ime-align: auto) {
+  .form-label-group > label {
+    display: none;
+  }
+  .form-label-group input::-ms-input-placeholder {
+    color: var(--c03-gray-04);
+  }
+}
+
+/* Fallback for IE
+-------------------------------------------------- */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .form-label-group > label {
+    display: none;
+  }
+  .form-label-group input:-ms-input-placeholder {
+    color: var(--c03-gray-04);
+  }
+}

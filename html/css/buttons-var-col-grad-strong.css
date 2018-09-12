@@ -1,0 +1,14 @@
+:root {
+
+/* Primary = btn-01 */
+--btn-01-col-01: #FFE344;
+--btn-01-col-02: #FBC333;
+--btn-01-col-03: #F6A623;
+
+
+/* Secondary = btn-02 */
+--btn-02-col-01: #0055FF;
+--btn-02-col-02: #001CB0;
+--btn-02-col-03: #000064;
+
+}
