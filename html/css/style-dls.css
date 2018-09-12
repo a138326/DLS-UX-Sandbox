@@ -138,8 +138,24 @@ Hero image
 	margin-bottom: var(--sp-05);
 	color: #fff;
 }
+.hero-cta p {
+	font-size: var(--body-size-normal);
+	width: 100%;
+	margin-top: -24px;
+	margin-bottom: var(--sp-05);
+	color: #fff;
+}
 .hero-cta a {
 	margin: 0 auto;
+}
+.bttn-pair {
+	width: 510px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+.bttn-pair .bttn {
+	
 }
 
 /*
