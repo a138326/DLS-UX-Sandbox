@@ -32,7 +32,7 @@
 --btn-02-hover-bg-grad: 236deg, var(--btn-02-col-01) 0%, var(--btn-02-col-02) 100%;
 
 
---btn-02-text: var(--btn-02-col-03);
+--btn-02-active-text: white;
 --btn-02-active-bg-grad: 236deg, var(--btn-02-col-02) 0%, var(--btn-02-col-03) 100%;
 
 --btn-02-focus-bg: none;
